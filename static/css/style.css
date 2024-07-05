@@ -40,15 +40,17 @@
 }
 
 
-header .main-navbar{
+header .container-fluid .main-navbar{
   display:flex;  
   align-items: center;
   justify-content: space-between;
+
 }
 
 
-header .container-fluid .main-navbar .logo img{
-  width: 200px;
+header .main-navbar .logo img{
+  width: 150px;
+
 }
 
 
@@ -367,6 +369,7 @@ a:hover {
   .side-navigation {
     display: none;
   }
+
 
 }
 

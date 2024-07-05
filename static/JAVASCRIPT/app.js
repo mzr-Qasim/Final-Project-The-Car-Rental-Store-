@@ -82,7 +82,7 @@ addDropdownItems(dropdownAnchor1, dropdownItems1);
 
 
 // BLOG DROP-DOWN
-function addDropdownItems1(parentElement, items) {
+function addDropdownItems2(parentElement, items) {
   items.forEach(item => {
     let a = document.createElement('a');
     a.href = '';

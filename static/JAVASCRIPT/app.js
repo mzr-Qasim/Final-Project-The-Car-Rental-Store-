@@ -103,3 +103,12 @@ dropdownAnchor2.appendChild(dropdownContent2);
 
 // Add items to the dropdown
 addDropdownItems(dropdownAnchor2, dropdownItems2);
+
+
+
+
+
+
+
+// Video Modal Box
+

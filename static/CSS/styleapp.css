@@ -15,7 +15,7 @@
 
 /* Main-Fonts */
   --main-font:"Axion RX 14 W01 Regular";
-  --secondary-font:"Axion RX 14 W01 Regular"
+  --secondary-font: "Oswald", sans-serif;
 }
 
 
@@ -34,31 +34,38 @@
 
 
 /* Header & Container  */
-.header{
-  background-color: var(--black-color); 
-  padding: 20px;
+
+
+.header .main-navbar{
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+  z-index: 1000; /* Ensure navbar stays on top */
+
 }
 
 
-header .container-fluid .main-navbar{
+
+.header .main-navbar .container-fluid{
   display:flex;  
   align-items: center;
   justify-content: space-between;
 
+
 }
 
 
+
+
 header .main-navbar .logo img{
-  width: 150px;
+  width: 200px;
 
 }
 
 
 /* Nav Links */
-.top-navbar {
-  font-size: 15px;
 
-}
 .navbar-logo {
   display: inline-block;
   padding: 10px;
@@ -76,7 +83,9 @@ header .main-navbar .logo img{
   display: inline-block;
   padding: 10px;
   text-decoration: none;
-  font-family: var(--main-font);
+  font-family: var(--secondary-font);
+  letter-spacing: 2px;
+  font-size: 15px;
   color: white;
 }
 .navbar-links > a.left-padding{
@@ -107,25 +116,25 @@ header .main-navbar .logo img{
   .nav-chlab:hover, #nav-check:checked ~ .nav-chlab {
     color: #424DFFEB;
 
+
   }
   .navbar-links, .navbar-links > a {
     display: block;
-    width: 100%;
+    width: 40%;
   }
   .navbar-links {
     position: absolute;
     transition: all 0.4s ease-in;
     overflow-y: hidden;
-    background-color: black;
-    top: 75px;
-    left: 0px;
+    background-color: var(--footer-background-color-2);
+    left: 0;
   }
   #nav-check:not(:checked) ~ .navbar-links {
     height: 0px;
   }
   #nav-check:checked ~ .navbar-links {
-    height: calc(100vh - 75px);
-    overflow-y: auto;
+    height: calc(100vh);
+    overflow-y: hidden;
   }
   .side-navigation {
     display: none;
@@ -139,6 +148,15 @@ header .main-navbar .logo img{
     
   }
 }
+
+
+
+
+
+
+
+
+
 
 
 
@@ -203,18 +221,14 @@ header .main-navbar .logo img{
 
 
 /* Side Navigation */
-.content {
-  text-align: center;
-  margin-top: 120px;
 
-}
 
 .sidebar {
   top: 0;
   right:0;
   min-height: 400px;
   height: 100vh;
-  width: 0px;
+  width: 0;
   text-align: left;
   background-color: var(--black-color);
   position: fixed;
@@ -341,7 +355,6 @@ a:hover {
 }
 
 .bar1, .bar2, .bar3 {
-
   width: 35px;
   height: 5px;
   background-color: white;
@@ -357,7 +370,6 @@ a:hover {
 .change .bar2 {
   opacity: 0;
 
-
 }
 
 .change .bar3 {
@@ -372,6 +384,99 @@ a:hover {
 
 
 }
+
+
+/* Main-Hero-Section */
+.Hero-Section-image {
+  position: relative;
+
+}
+
+.Hero-Section-image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity here */
+}
+
+.Hero-Section-Image-Content{
+  position: absolute;
+  top: 25%;
+}
+
+.Hero-Section-Image-Content .content{
+  padding: 10px 0;
+}
+
+
+
+
+.Hero-Section-Image-Content h2{
+  font-family: var(--main-font);
+  font-size: 60px;
+  color: var(--white-color);
+}
+
+.Hero-Section-Image-Content p{
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  color: var(--white-color);
+
+}
+
+.Hero-Section-Image-Content .Hero-Section-Image-Content-Modal-Box h4{
+  font-size: 20px;
+  color: var(--white-color);
+  font-family: var(--main-font);
+}
+
+
+
+.Hero-Section-Image-Content-Book-A-Car{
+  padding-top: 70px;
+}
+
+.Hero-Section-Image-Content-Book-A-Car .heading h4{
+  font-family: var(--main-font);
+  font-size: 25px;
+  color: var(--white-color);
+}
+
+
+
+.Booking-Schedule-Content {
+  padding: 30px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity here */
+
+}
+
+
+.Booking-Schedule-Content .padding-left{
+  font-size: 20px;
+  background-color: blue;
+  color: var(--white-color);
+  font-family: var(--main-font);
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
 
 
 

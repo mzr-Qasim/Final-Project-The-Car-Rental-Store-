@@ -22,30 +22,27 @@
                         <h4>BOOK A CAR</h4>
                     </div><!-- /.heading -->
                     <div class="Booking-Schedule-Content">
-                        <div class="row">
-                            <div class="col-2 Booking-Schedule-Email-Input">
-                                <form>
-                                    <input type="email" placeholder="Your Email Address" width="48" height="48">
-                                </form>
-                            </div><!-- /.col-2 -->
-                            <div class="col-2 Booking-Schedule-Car-Input">
-
-                            </div><!-- /.col-2 -->
-                            <div class="col-2 Booking-Schedule-Pickup-Date-Input">
-
-                            </div><!-- /.col-2 -->
-                            <div class="col-2 Booking-Schedule-Return-Date-Input">
-
-                            </div><!-- /.col-2 -->
-                            <div class="col-2 padding-left">
-                                <a href="">BOOK NOW</a>
-                            </div><!-- /.col-2 -->
-                        </div><!-- /.row -->
+                        <form class="car-rent-form">
+                            <input type="text" name="car_name" placeholder="Your Name">
+                            <select name="car_name_dropdown" class="select-placeholder">
+                                <option value="" disabled selected style=>Choose a Car</option>
+                                <option value="car1">SUV</option>                               
+                                <option value="car2">Sedan</option>
+                                <option value="car2">Sport</option>
+                                <option value="car2">Van</option>
+                            </select>
+                            <input type="text" name="pickup_date" placeholder="Pickup Date" class="date-input" onclick="showDatepicker(this)">
+                            <input type="text" name="return_date" placeholder="Return Date" class="date-input" onclick="showDatepicker(this)">
+                            <button type="submit" style="display: flex; justify-content: center; align-items: center;">BOOK NOW</button>
+                        </form>
                     </div><!-- /.Booking-Schedule-Content -->
                 </div><!-- /.Hero-Section-Image-Content-Book-A-Car -->
             </div><!-- /.container -->
         </div><!-- /.Hero-Section-Image-Content -->
     </section><!-- /.Main-Hero-Section -->
+    <div class="Driving-excellence-owl-carousel">
+    
+    </div><!-- /.Driving-excellence-owl-carousel -->
 </main><!-- /.main-content -->
 
 {% include 'footer/footer.html' %}

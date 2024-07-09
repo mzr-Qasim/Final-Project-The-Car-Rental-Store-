@@ -454,24 +454,121 @@ a:hover {
 .Booking-Schedule-Content {
   padding: 30px;
   width: 100%;
-  height: 100%;
   backdrop-filter: blur(6px);
 
 }
+/* Booking-Schedule-Content-Configuration */
 
+.car-rent-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px;
 
-.Booking-Schedule-Content .padding-left{
-  background-color: blue;
-  font-family: var(--main-font);
-  text-align: center;
+  border-radius: 5px;
+  justify-content: space-between; /* Adjust alignment as needed */
+  align-items: center; /* Adjust alignment as needed */
 }
-.Booking-Schedule-Content .padding-left a{
+
+
+
+.car-rent-form input[type="text"],
+.car-rent-form select,
+.car-rent-form input[type="date"],
+.car-rent-form button {
+  flex: 1; /* Equal width distribution */
+  min-width: 25px; /* Minimum width */
+  height: 40px; /* Adjust height as needed */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+  cursor: pointer;
+
+}
+
+
+
+
+
+.car-rent-form button {
+  flex: 0 0 auto; /* Let the button grow or shrink as needed */
+  min-width: auto; /* Reset minimum width for button */
+}
+
+
+::placeholder {
   font-size: 20px;
-  color: var(--white-color);
-
 }
 
-/**/
+
+
+.select-placeholder option {
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 20px; /* Increase perceived font size (not guaranteed to work universally) */
+  line-height: 20px; /* Ensure proper line height for readability */
+}
+
+
+
+@media (max-width: 768px) {
+  .car-rent-form {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+  }
+
+  .car-rent-form input[type="text"],
+  .car-rent-form select,
+  .car-rent-form input[type="date"],
+  .car-rent-form button {
+      width: 100%; /* Full width on smaller screens */
+      min-width: 0; /* Reset minimum width on smaller screens */
+      margin-bottom: 10px; /* Add space between inputs in single column */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Driving Excellence Owl Carousel Section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

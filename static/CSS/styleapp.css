@@ -16,7 +16,17 @@
 /* Main-Fonts */
   --main-font:"Axion RX 14 W01 Regular";
   --secondary-font: "Oswald", sans-serif;
+
+
+
+
+
+
+
+  --blur: blur(6px);
 }
+
+
 
 
 
@@ -74,11 +84,18 @@ header .main-navbar .logo img{
   display: none;
   cursor: pointer;
 }
+.navbar-links img{
+  width: 150px; 
+  padding: 30px 10px;
+  display: none;
+}
 
 
 .navbar-links {
   display: inline-block;
 }
+
+
 .navbar-links > a {
   display: inline-block;
   padding: 10px;
@@ -127,6 +144,7 @@ header .main-navbar .logo img{
     transition: all 0.4s ease-in;
     overflow-y: hidden;
     background-color: var(--footer-background-color-2);
+    top: 0;
     left: 0;
   }
   #nav-check:not(:checked) ~ .navbar-links {
@@ -139,6 +157,13 @@ header .main-navbar .logo img{
   .side-navigation {
     display: none;
   }
+
+  .navbar-links img{
+     display: flex;
+     vertical-align: center;
+  }
+  
+
   .navbar-links > a.left-padding{
     padding-left: 10px !important;
   }
@@ -414,6 +439,7 @@ a:hover {
 
 .Hero-Section-Image-Content .content{
   padding: 10px 0;
+
 }
 
 
@@ -456,17 +482,20 @@ a:hover {
   padding: 30px;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6); /* Adjust opacity here */
+  backdrop-filter: blur(6px);
 
 }
 
 
 .Booking-Schedule-Content .padding-left{
-  font-size: 20px;
   background-color: blue;
-  color: var(--white-color);
   font-family: var(--main-font);
   text-align: center;
+}
+.Booking-Schedule-Content .padding-left a{
+  font-size: 20px;
+  color: var(--white-color);
+
 }
 
 

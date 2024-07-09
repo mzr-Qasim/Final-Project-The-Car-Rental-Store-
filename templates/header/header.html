@@ -24,11 +24,31 @@
                     <input type="checkbox" id="nav-check">
                     <label for="nav-check" class="nav-chlab">☰</label>
                     <div class="navbar-links">
+                      <img class="" src="{% static 'images/main-navbar-logo.png' %}" alt="">
                       <a class="left-padding" href="/">HOME</a>
-                      <a href="{% url 'about' %}">ABOUT</a>
-                      <a href="#" class="dropdown dropdown-toggle">OUR CARS</a>
-                      <a href="#" class="dropdown dropdown_Features dropdown-toggle">FEATURES</a>
-                      <a href="#" class="dropdown dropdown_Blog dropdown-toggle">BLOG</a>
+                      <a href="{% url 'about' %}">ABOUT</a>                   
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        OUR CARS
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">OUR CARS</a></li>
+                        <li><a class="dropdown-item" href="#">CAR DETAIL</a></li>
+                      </ul>
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        FEATURES
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">OUR TEAM</a></li>
+                        <li><a class="dropdown-item" href="#">FAQ</a></li>
+                        <li><a class="dropdown-item" href="#">404 PAGE</a></li>
+                      </ul>
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        BLOG
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">BLOG</a></li>
+                        <li><a class="dropdown-item" href="#">SINGLE POST</a></li>
+                      </ul>
                       <a class="right-padding" href="/more">CONTACT</a>
                     </div>
                   </nav>
